@@ -10,9 +10,13 @@ All of the UFO sighting data is initially available for viewing. To further refi
 
 1. On the left side of the page, select the criteria you wish to filter by and type in the filter criteria. I.E: To search for UFO sightings that occurred in El Cajon, the user should input el cajon into the city field and press enter or click away from the search field. 
 
-SS 1 
+![SS 1](https://user-images.githubusercontent.com/67031885/125210531-5b3df880-e26e-11eb-989d-4eb9161592cd.PNG)
+
 
 2. You may also further refine a search by inputting more than one criteria. I.E: To search for sightings with a triangle shape, that occurred in the us, and on 1/1/2010 the user would input the relevant search parameters. 
+
+![SS 2](https://user-images.githubusercontent.com/67031885/125210537-5ed17f80-e26e-11eb-8cc2-39be7c7d0f18.PNG)
+
 
 ## Summary
 One drawback this project has is that the filter criteria is searching for direct matches. This means that an unintended limitation is that the text case input into the search parameters must match that in the data set we are using. For example, if a user were to search for ‘El Cajon’ instead of ‘el cajon’ they would see no search results. 
