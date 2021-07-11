@@ -28,6 +28,7 @@ function buildTable(data) {
 var filters = {};
 
 // 3. Use this function to update the filters. 
+// Hint video provided much of the code 
 function updateFilters() {
 
     // 4a. Save the element that was changed as a variable.
@@ -57,18 +58,20 @@ function updateFilters() {
   // 7. Use this function to filter the table when data is entered.
   function filterTable() {
   
-    // 8. Set the filtered data to the tableData.
-    let filterdData = tableData
+   // 8. Set the filtered data to the tableData.
+    let filterData = tableData
+    console.log(filterData)
   
-    // 9. Loop through all of the filters and keep any data that
-    // matches the filter values
-    Object.entries(filters).forEach(([key, value]) => {
-      filterData = filterData.filter(row => row.datetime === date);
-      }
+  // 9. Loop through all of the filters and keep any data that
+  // matches the filter values
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries for object iteration below  
+     Object.entries(filters).forEach(([key, value]) => {
+     filterData = filterData.filter(row => row[key] === value);
+     });
   
-    // 10. Finally, rebuild the table using the filtered data
-    
-  }
+  // // 10. Finally, rebuild the table using the filtered data
+    buildTable(filterData);
+    }
   
   // 2. Attach an event to listen for changes to each filter
   // change parameter obtained from hint video on module 
